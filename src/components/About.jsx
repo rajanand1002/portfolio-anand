@@ -12,18 +12,19 @@ export default function About() {
         <div className="about-content">
           <h3>Who Am I?</h3>
           <p>
-            I'm Anand Kumar, a passionate Computer Science student who enjoys
+            I'm Anand Kumar, a Computer Science student passionate about
             building modern web applications and solving real-world problems
             through code.
           </p>
           <p>
-            I specialize in responsive frontend development using HTML, CSS,
-            JavaScript and React. Currently I'm learning Backend Development,
-            Databases and the MERN Stack.
+            I have hands-on experience with HTML, CSS, JavaScript, React.js, and
+            Vite. Currently, I'm expanding my skills in backend development with
+            Node.js, Express.js, and MongoDB while strengthening my
+            problem-solving skills through Java and DSA.
           </p>
           <p>
-            My goal is to become a Software Engineer capable of building
-            complete full-stack applications.
+            My goal is to become a skilled Software Developer, build impactful
+            full-stack applications, and continuously grow as a developer.
           </p>
         </div>
       </div>

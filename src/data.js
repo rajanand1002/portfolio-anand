@@ -1,11 +1,12 @@
 // Central place to edit your content — no need to touch components below.
 
 export const skills = [
-  { group: "Frontend", items: ["HTML5", "CSS3", "ReactJS"] },
-  { group: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
+  { group: "Frontend", items: ["HTML5", "CSS3", "ReactJS", "Vite"] },
+  { group: "Backend", items: ["Node.js", "Express.js", "REST APIs","Mongoose"] },
   { group: "Database", items: ["SQL", "MongoDB"] },
   { group: "Programming Languages", items: ["Java", "JavaScript"] },
   { group: "Core CS", items: [ "Data Structures", "Object-Oriented Programming", "DBMS"," Computer Networks"] },
+  { group: "Concepts", items: ["MVC", "CRUD", "Responsive Design"] },
   { group: "Tools", items: ["Git & GitHub", "VS Code", "Netlify","Vercel","Render", "Postman"] },
 ];
 
@@ -98,6 +99,7 @@ export const projects = [
 
 // Journey / learning timeline — shown in a dedicated section to demonstrate
 // genuine, self-driven progression (not something an AI generator would know).
+
 export const journey = [
   {
     date: "Started",
@@ -107,23 +109,30 @@ export const journey = [
   },
   {
     date: "Next",
-    title: "Built first real projects",
+    title: "Built First Real Projects",
     description:
-      "Tic-Tac-Toe, Task Manager, and UI clones to practice DOM manipulation, layout, and responsive design.",
+      "Built projects like Tic-Tac-Toe, Task Manager, and UI clones to practice DOM manipulation, layout, and responsive design.",
+  },
+  {
+    date: "Backend Project",
+    title: "Built Shortly - URL Shortener",
+    description:
+      "Developed a URL Shortener using Node.js, Express.js, and MongoDB. Implemented REST APIs to generate short URLs, redirect users, and track clicks.",
   },
   {
     date: "Currently",
-    title: "Learning the MERN stack",
+    title: "Learning the MERN Stack",
     description:
-      "Moving from static sites to full applications — React on the frontend, Node/Express/SQL on the backend.",
+      "Building full-stack applications using React.js on the frontend and Node.js, Express.js, and MongoDB on the backend.",
   },
   {
-    date: "In parallel",
-    title: "DSA in Java + Aptitude prep",
+    date: "In Parallel",
+    title: "DSA in Java + Aptitude Prep",
     description:
-      "Practicing data structures and algorithms daily to build strong problem-solving fundamentals for interviews.",
+      "Practicing data structures and algorithms and solving coding problems to strengthen problem-solving skills for technical interviews.",
   },
 ];
+
 
 // Fill in your real profile links/usernames — shown as a stats/links section.
 export const codingProfiles = {
