@@ -2,7 +2,8 @@
 
 A personal portfolio site built with **React + Vite**, rebuilt from an original HTML/CSS/JS version into a fully component-based app. Designed around a "spec sheet / datasheet" visual theme — deep graphite background, brass/amber accent, monospace data labels, and corner-bracket framing instead of generic glassmorphism cards.
 
-**Live demo:** [anandkrr.netlify.app](https://anandkrr.netlify.app/) 
+**Live demo:** [anandkrr.vercel.app](https://anandkrr.vercel.app/) 
+               
 
 ## Features
 
