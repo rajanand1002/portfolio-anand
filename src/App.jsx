@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 
 import Loader from "./components/Loader";
@@ -24,6 +25,22 @@ function App() {
   const [loaderHidden, setLoaderHidden] = useState(false);
   const blobsRef = useRef(null);
 
+  // Light / Dark Mode
+  const [theme, setTheme] = useState(
+    () => localStorage.getItem("portfolio-theme") || "dark"
+  );
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("portfolio-theme", theme);
+  }, [theme]);
+
+  function toggleTheme() {
+    setTheme((current) =>
+      current === "dark" ? "light" : "dark"
+    );
+  }
+
   useEffect(() => {
     const timer = setTimeout(() => setLoaderHidden(true), 300);
     return () => clearTimeout(timer);
@@ -43,7 +60,7 @@ function App() {
 
       <BackgroundBlobs ref={blobsRef} />
 
-      <Header />
+      <Header theme={theme} onToggleTheme={toggleTheme} />
 
       <main>
         <Hero />

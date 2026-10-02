@@ -3,7 +3,7 @@ import { journey } from "../data";
 export default function Journey() {
   return (
     <section id="journey">
-      <span className="section-index">— / JOURNEY</span>
+      <span className="section-index">JOURNEY</span>
       <h2>My Journey</h2>
       <div className="timeline">
         {journey.map((step, idx) => (

@@ -13,7 +13,7 @@ export default function CodingProfiles() {
 
   return (
     <section id="coding-profiles">
-      <span className="section-index">— / PROFILES</span>
+      <span className="section-index">PROFILES</span>
       <h2>Coding Profiles</h2>
       <div className="coding-profiles-grid">
         {activeProfiles.map(([key, url]) => (

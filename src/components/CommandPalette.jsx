@@ -64,14 +64,6 @@ export default function CommandPalette() {
 
   return (
     <>
-      <button
-        id="command-trigger"
-        onClick={() => setOpen(true)}
-        aria-label="Open quick navigation"
-      >
-        <span>Quick Nav</span>
-        <kbd>⌘K</kbd>
-      </button>
 
       {open && (
         <div className="command-palette-overlay" onClick={() => setOpen(false)}>

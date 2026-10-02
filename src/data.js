@@ -15,7 +15,7 @@ export const projects = [
     description: "Personal Portfolio Website",
     tech: "HTML • CSS • JS",
     link: "https://anandkrr.netlify.app/",
-    github: "", // TODO: add your repo link
+    github: "https://github.com/rajanand1002/portfolio-anand", 
     image: "portfolio2.png",
     problem:
       "Needed a single place to showcase my projects and skills to recruiters instead of sending scattered links.",
@@ -47,7 +47,7 @@ export const projects = [
     description: "Responsive UI",
     tech: "HTML • CSS • JS",
     link: "https://tictactoe-anand.netlify.app/",
-    github: "", // TODO: add your repo link
+    github: "https://github.com/rajanand1002/Tic-Tac-Toe-Game",
     image: "TicTacToe.png",
     problem:
       "Wanted to practice core JavaScript logic — game state, win detection, turn management — without any framework to lean on.",
@@ -63,7 +63,7 @@ export const projects = [
     description: "Responsive UI Clone",
     tech: "HTML • CSS • JS",
     link: "https://blinkitanand.netlify.app/",
-    github: "", // TODO: add your repo link
+    github: "https://github.com/rajanand1002/Blinkit-Clone",
     image: "Blinkit.png",
     problem:
       "Wanted to practice replicating a real, complex production UI — grids, cards, responsive breakpoints — rather than a simple layout.",
@@ -74,6 +74,27 @@ export const projects = [
     improve:
       "Would add real state — a working cart with add/remove and quantity — instead of a static UI.",
   },
+
+  {
+  title: "Shortly – URL Shortener",
+  description: "Shorten URLs & Track Clicks",
+  tech: "React • Node.js • Express • MongoDB",
+  link: "https://shortly-url-shortener-2.onrender.com",
+  github: "https://github.com/rajanand1002/shortly-url-shortener",
+  image: "urlshortner.png",
+
+  problem:
+    "Managing and sharing long URLs can be inconvenient. I wanted to build a simple application that converts long URLs into short, shareable links and allows users to track link visits.",
+
+  approach:
+    "Built a full-stack URL shortener using React, Node.js, Express.js, and MongoDB. Users can generate short links, copy and share them, view click analytics, and access their recent links.",
+
+  challenges:
+    "Implementing URL validation, generating unique short IDs, recording click history, and connecting the React frontend with the Express API required careful handling of backend logic and asynchronous requests.",
+
+  improve:
+    "Would add user authentication, custom short URLs, QR code generation, and more detailed analytics, along with cloud-based link management."
+},
 ];
 
 // Journey / learning timeline — shown in a dedicated section to demonstrate
@@ -107,14 +128,16 @@ export const journey = [
 
 // Fill in your real profile links/usernames — shown as a stats/links section.
 export const codingProfiles = {
-  leetcode: "", // e.g. "https://leetcode.com/yourusername"
-  gfg: "", // e.g. "https://auth.geeksforgeeks.org/user/yourusername"
-  hackerrank: "",
+  leetcode: "https://leetcode.com/u/AnandKr_1002/",
+
 };
 
 export const typingWords = [
-  "Aspiring Software Engineer",
-  "MERN Stack Web Developer",
+  "MERN Stack Developer",
+  "Frontend Developer",
+  "Backend Developer",
+  "Software Engineer",
+  "Problem Solver",
 ];
 
 export const resumeUrl =
