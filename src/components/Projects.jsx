@@ -30,8 +30,15 @@ export default function Projects() {
         ))}
       </div>
 
-      <div id="project-modal" className={modalProject ? "open" : ""} onClick={closeModal}>
-        <div className="modal-content case-study" onClick={(e) => e.stopPropagation()}>
+      <div
+        id="project-modal"
+        className={modalProject ? "open" : ""}
+        onClick={closeModal}
+      >
+        <div
+          className="modal-content case-study"
+          onClick={(e) => e.stopPropagation()}
+        >
           <span className="close-btn" onClick={closeModal}>
             &times;
           </span>
@@ -62,14 +69,16 @@ export default function Projects() {
               </div>
 
               <div className="case-study-actions">
-                <a
-                  href={modalProject.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn primary-btn small-btn"
-                >
-                  Live Demo
-                </a>
+                {modalProject.title !== "Portfolio" && (
+                  <a
+                    href={modalProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn primary-btn small-btn"
+                  >
+                    Live Demo
+                  </a>
+                )}
                 {modalProject.github && (
                   <a
                     href={modalProject.github}

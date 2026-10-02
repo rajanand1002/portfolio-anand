@@ -1674,3 +1674,82 @@ textarea:focus-visible {
     bottom: -4px;
   }
 }
+
+
+/* Coding Profiles - Mobile Spacing Fix */
+@media (max-width: 768px) {
+  #coding-profiles {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .coding-profiles-grid {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .coding-profile-card {
+    padding: 14px 22px;
+  }
+
+  /* Reduce gap before Resume */
+  #resume {
+    padding-top: 30px;
+  }
+}
+
+
+/* Coding Profiles - Mobile Fix */
+@media (max-width: 768px) {
+  #coding-profiles {
+    padding-top: 35px !important;
+    padding-bottom: 10px !important;
+    text-align: center !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  #coding-profiles .section-index {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  #coding-profiles h2 {
+    text-align: center !important;
+    margin: 0 0 28px !important;
+    padding: 0 !important;
+  }
+
+  #coding-profiles .coding-profiles-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+  }
+
+  #coding-profiles .coding-profile-card {
+    padding: 12px 22px;
+  }
+
+  #resume {
+    padding-top: 25px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #coding-profiles {
+    text-align: left !important;
+  }
+
+  #coding-profiles .section-index,
+  #coding-profiles h2 {
+    text-align: left !important;
+  }
+
+  #coding-profiles .coding-profiles-grid {
+    justify-content: flex-start !important;
+  }
+}

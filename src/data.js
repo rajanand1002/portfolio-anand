@@ -1,20 +1,19 @@
 // Central place to edit your content — no need to touch components below.
 
 export const skills = [
-  { group: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "ReactJS"] },
+  { group: "Frontend", items: ["HTML5", "CSS3", "ReactJS"] },
   { group: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
   { group: "Database", items: ["SQL", "MongoDB"] },
   { group: "Programming Languages", items: ["Java", "JavaScript"] },
-  { group: "Core CS", items: [ "Data Structures", "Algorithms", "Object-Oriented Programming", "DBMS"," Computer Networks"] },
-  { group: "Tools", items: ["Git & GitHub", "VS Code", "Netlify", "Postman"] },
+  { group: "Core CS", items: [ "Data Structures", "Object-Oriented Programming", "DBMS"," Computer Networks"] },
+  { group: "Tools", items: ["Git & GitHub", "VS Code", "Netlify","Vercel","Render", "Postman"] },
 ];
 
 export const projects = [
   {
     title: "Portfolio",
     description: "Personal Portfolio Website",
-    tech: "HTML • CSS • JS",
-    link: "https://anandkrr.netlify.app/",
+    tech: "React.js • Vite • JavaScript • HTML • CSS",
     github: "https://github.com/rajanand1002/portfolio-anand", 
     image: "portfolio2.png",
     problem:
@@ -78,7 +77,7 @@ export const projects = [
   {
   title: "Shortly – URL Shortener",
   description: "Shorten URLs & Track Clicks",
-  tech: "React • Node.js • Express • MongoDB",
+  tech: "React.js • Vite • Node.js • Express • MongoDB",
   link: "https://shortly-url-shortener-2.onrender.com",
   github: "https://github.com/rajanand1002/shortly-url-shortener",
   image: "urlshortner.png",
