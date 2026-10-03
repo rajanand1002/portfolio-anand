@@ -8,9 +8,8 @@ A personal portfolio site built with **React + Vite**, rebuilt from an original 
 ## Features
 
 - **Case-study project cards** — each project expands into Problem → Approach → Challenges → What I'd Improve, instead of just a title and screenshot
-- **Command Palette (⌘K / Ctrl+K)** — keyboard-driven quick navigation to any section or external link (GitHub, LinkedIn, Resume)
 - **Journey timeline** — shows real learning progression (HTML/CSS → React → MERN stack → DSA)
-- **Coding profiles section** — links out to LeetCode / GFG / HackerRank (optional, hides itself if empty)
+- **Coding profiles section** — links out to LeetCode
 - **Contact form** wired to EmailJS, with one-click copy-to-clipboard email button
 - **Smooth, eased scroll navigation** with fixed-header offset handling
 - **Scroll-reveal animations**, 3D tilt on project cards, cursor glow, scroll progress bar
