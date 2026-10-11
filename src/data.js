@@ -17,14 +17,14 @@ export const projects = [
     tech: "React.js • Vite • JavaScript • HTML • CSS",
     github: "https://github.com/rajanand1002/portfolio-anand", 
     image: "portfolio2.png",
-    problem:
+        problem:
       "Needed a single place to showcase my projects and skills to recruiters instead of sending scattered links.",
     approach:
-      "Built it fully custom with vanilla HTML/CSS/JS — no template — focusing on smooth scroll-based animations and a responsive layout that works from mobile to desktop.",
+      "Started as plain HTML/CSS/JS, then rebuilt it in React + Vite as a component-based app: one component per section, custom hooks for scroll-reveal and smooth scrolling, and all content (projects, skills, links) kept in a single data.js file so adding a project never touches the UI code. Added a dark/light theme, a Ctrl+K command palette, a canvas-based moving background, and an EmailJS contact form.",
     challenges:
-      "Getting the scroll-reveal and cursor-glow effects to stay smooth on lower-end mobile devices took some performance tuning (throttling scroll listeners, using CSS transforms instead of top/left).",
+      "Moving from direct DOM manipulation (querySelector, classList) to React state, refs and effects, including cleaning up event listeners properly. Also debugged two real bugs: the mobile menu not opening because a checkbox and React state were both toggling it (cancelling out), and slow nav scrolling because CSS scroll-behavior: smooth was conflicting with my JS scroll animation.",
     improve:
-      "Would add a CMS or JSON-driven content layer so I don't have to touch markup every time I add a project.",
+      "Would add automated tests, move to Next.js for better SEO and server-side rendering, and add a small blog/notes section so recruiters can see how I think, not just what I built.",
   },
   {
     title: "Smart Task Manager",
