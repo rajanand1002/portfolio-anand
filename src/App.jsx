@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import Loader from "./components/Loader";
 import BackgroundBlobs from "./components/BackgroundBlobs";
+import ParticleBackground from "./components/ParticleBackground";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -57,6 +58,7 @@ function App() {
       <Loader hidden={loaderHidden} />
 
       <BackgroundBlobs />
+      <ParticleBackground />
 
       <Header theme={theme} onToggleTheme={toggleTheme} />
 

@@ -11,16 +11,15 @@ export default function BackToTop() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  function scrollToTop() {
+    function scrollToTop() {
     const startY = window.scrollY;
-    const duration = 600;
+    const duration = Math.min(650, Math.max(280, startY * 0.18));
     const startTime = performance.now();
 
     function step(currentTime) {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
-      window.scrollTo(0, startY * (1 - eased));
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+      window.scrollTo({ top: startY * (1 - eased), behavior: "instant" });
       if (progress < 1) requestAnimationFrame(step);
     }
     requestAnimationFrame(step);
