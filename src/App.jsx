@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 
 import Loader from "./components/Loader";
-import BackgroundBlobs from "./components/BackgroundBlobs";
-import ParticleBackground from "./components/ParticleBackground";
+// import BackgroundBlobs from "./components/BackgroundBlobs";
+// import ParticleBackground from "./components/ParticleBackground";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -14,7 +14,7 @@ import CodingProfiles from "./components/CodingProfiles";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import CursorGlow from "./components/CursorGlow";
+// import CursorGlow from "./components/CursorGlow";
 import ScrollProgress from "./components/ScrollProgress";
 import BackToTop from "./components/BackToTop";
 import CommandPalette from "./components/CommandPalette";
@@ -57,8 +57,8 @@ function App() {
       <ScrollProgress />
       <Loader hidden={loaderHidden} />
 
-      <BackgroundBlobs />
-      <ParticleBackground />
+      {/* <BackgroundBlobs />
+      <ParticleBackground /> */}
 
       <Header theme={theme} onToggleTheme={toggleTheme} />
 
@@ -75,7 +75,7 @@ function App() {
 
       <Footer />
 
-      <CursorGlow />
+      {/* <CursorGlow /> */}
       <BackToTop />
       <CommandPalette />
     </>
