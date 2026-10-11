@@ -1753,3 +1753,78 @@ textarea:focus-visible {
     justify-content: flex-start !important;
   }
 }
+
+
+/* =====================================================
+   ANIMATED BACKGROUND — slow aurora drift
+===================================================== */
+.bg-animated,
+:root[data-theme="light"] .bg-animated {
+  background: none;
+  overflow: hidden;
+  --orb-1: rgba(232, 163, 61, 0.15);   /* amber */
+  --orb-2: rgba(63, 167, 150, 0.13);   /* teal */
+  --orb-3: rgba(96, 120, 220, 0.11);   /* soft indigo */
+}
+
+:root[data-theme="light"] .bg-animated {
+  --orb-1: rgba(232, 163, 61, 0.16);
+  --orb-2: rgba(63, 167, 150, 0.12);
+  --orb-3: rgba(96, 120, 220, 0.09);
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.bg-orb-1 {
+  width: 62vmax;
+  height: 62vmax;
+  top: -24vmax;
+  left: -18vmax;
+  background: radial-gradient(circle, var(--orb-1) 0%, transparent 65%);
+  animation: orbDriftA 38s ease-in-out infinite alternate;
+}
+
+.bg-orb-2 {
+  width: 70vmax;
+  height: 70vmax;
+  bottom: -30vmax;
+  right: -24vmax;
+  background: radial-gradient(circle, var(--orb-2) 0%, transparent 65%);
+  animation: orbDriftB 46s ease-in-out infinite alternate;
+}
+
+.bg-orb-3 {
+  width: 48vmax;
+  height: 48vmax;
+  top: 28%;
+  left: 38%;
+  background: radial-gradient(circle, var(--orb-3) 0%, transparent 65%);
+  animation: orbDriftC 54s ease-in-out infinite alternate;
+}
+
+@keyframes orbDriftA {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(22%, 14%, 0) scale(1.12); }
+  100% { transform: translate3d(8%, 30%, 0) scale(0.96); }
+}
+
+@keyframes orbDriftB {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-20%, -16%, 0) scale(1.1); }
+  100% { transform: translate3d(-6%, -30%, 0) scale(0.95); }
+}
+
+@keyframes orbDriftC {
+  0%   { transform: translate3d(-18%, -10%, 0) scale(0.95); }
+  50%  { transform: translate3d(14%, 12%, 0) scale(1.15); }
+  100% { transform: translate3d(-8%, 22%, 0) scale(1); }
+}
+
+/* Respect users who prefer no motion */
+@media (prefers-reduced-motion: reduce) {
+  .bg-orb { animation: none; }
+}

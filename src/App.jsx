@@ -1,5 +1,5 @@
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Loader from "./components/Loader";
 import BackgroundBlobs from "./components/BackgroundBlobs";
@@ -19,11 +19,10 @@ import BackToTop from "./components/BackToTop";
 import CommandPalette from "./components/CommandPalette";
 
 import useScrollReveal from "./hooks/useScrollReveal";
-import useBlobParallax from "./hooks/useBlobParallax";
 
 function App() {
   const [loaderHidden, setLoaderHidden] = useState(false);
-  const blobsRef = useRef(null);
+  
 
   // Light / Dark Mode
   const [theme, setTheme] = useState(
@@ -47,7 +46,6 @@ function App() {
   }, []);
 
   useScrollReveal();
-  useBlobParallax(blobsRef);
 
   return (
     <>
@@ -58,7 +56,7 @@ function App() {
       <ScrollProgress />
       <Loader hidden={loaderHidden} />
 
-      <BackgroundBlobs ref={blobsRef} />
+      <BackgroundBlobs />
 
       <Header theme={theme} onToggleTheme={toggleTheme} />
 
