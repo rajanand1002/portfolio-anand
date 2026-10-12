@@ -1843,3 +1843,73 @@ textarea:focus-visible {
 @media print {
   .bg-canvas { display: none !important; }
 }
+
+
+
+/* =====================================================
+   LIGHT THEME — clean professional refresh
+   (dark theme untouched)
+===================================================== */
+:root[data-theme="light"] {
+  --bg: #f8f9fb;
+  --bg-panel: #ffffff;
+  --bg-panel-raised: #eef1f5;
+  --ink: #111827;
+  --muted: #4b5563;
+  --accent: #b45309;
+  --accent-dim: #92400e;
+  --accent-teal: #0f766e;
+  --line: rgba(17, 24, 39, 0.12);
+  --line-strong: rgba(17, 24, 39, 0.24);
+  --shadow: 0 10px 30px rgba(17, 24, 39, 0.10);
+}
+
+/* plain background, no grid */
+:root[data-theme="light"] body {
+  background-color: var(--bg);
+  background-image: none;
+}
+
+/* header separates from the page */
+:root[data-theme="light"] header {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.06), 0 6px 20px rgba(17, 24, 39, 0.04);
+}
+
+/* alternating full-width bands so sections feel separate */
+:root[data-theme="light"] #about,
+:root[data-theme="light"] #skills,
+:root[data-theme="light"] #resume {
+  box-shadow: 0 0 0 100vmax #eff2f6;
+  clip-path: inset(0 -100vmax);
+  background: #eff2f6;
+}
+
+/* cards/tags stay white so they pop on both backgrounds */
+:root[data-theme="light"] .skill-list span,
+:root[data-theme="light"] .project-card,
+:root[data-theme="light"] .coding-profile-card,
+:root[data-theme="light"] form input,
+:root[data-theme="light"] form textarea {
+  background: #ffffff;
+}
+
+:root[data-theme="light"] .project-card:hover {
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+
+/* =====================================================
+   PROJECTS GRID — odd last card spans full width
+===================================================== */
+.projects-grid > .project-link:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 769px) {
+  .projects-grid > .project-link:last-child:nth-child(odd) .project-card img {
+    height: 300px;
+    object-position: center 22%;
+  }
+}

@@ -87,14 +87,16 @@ export const projects = [
     "Managing and sharing long URLs can be inconvenient. I wanted to build a simple application that converts long URLs into short, shareable links and allows users to track link visits.",
 
   approach:
-    "Built a full-stack URL shortener using React, Node.js, Express.js, and MongoDB. Users can generate short links, copy and share them, view click analytics, and access their recent links.",
+    "Built a full-stack URL shortener using React, Node.js, Express.js, and MongoDB. Users can generate short links, copy and share them, view click analytics, and access their recent links. Hosted on Render's free tier, so the first load may take about 30 seconds to wake up.",
 
   challenges:
     "Implementing URL validation, generating unique short IDs, recording click history, and connecting the React frontend with the Express API required careful handling of backend logic and asynchronous requests.",
+    
 
   improve:
     "Would add user authentication, custom short URLs, QR code generation, and more detailed analytics, along with cloud-based link management."
 },
+
 ];
 
 // Journey / learning timeline — shown in a dedicated section to demonstrate
